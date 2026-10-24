@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact &amp; Booking | The Hot Sit</title>
+<meta name="description" content="Contact The Hot Sit or book an appointment. Mall of the South. Call 064 987 0578.">
+<meta name="theme-color" content="#c9a24b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contact">
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Get In Touch</span>
+    <h1>Contact &amp; Booking</h1>
+    <p>Send us a message and we will confirm your appointment.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="contact-wrap">
+      <div class="info-card reveal">
+        <h3>Visit The Hot Sit</h3>
+        <div class="info-row"><span class="ic">&#128205;</span><div><small>Location</small>Mall of the South, Johannesburg</div></div>
+        <div class="info-row"><span class="ic">&#128222;</span><div><small>Phone</small><a href="tel:+27649870578">064 987 0578</a></div></div>
+        <div class="info-row"><span class="ic">&#9993;</span><div><small>Email</small><a href="mailto:tpy.media0@gmail.com">tpy.media0@gmail.com</a></div></div>
+        <div class="info-row"><span class="ic">&#128172;</span><div><small>WhatsApp</small><a href="https://wa.me/27649870578" target="_blank" rel="noopener">Chat with us now</a></div></div>
+      </div>
+
+      <div class="form-card reveal" id="book">
+        <h3>Book or Enquire</h3>
+        <p style="color:var(--muted);margin-bottom:22px;font-size:.92rem">Fill in the form and you will receive an instant confirmation email.</p>
+        <form id="contact-form" novalidate>
+          <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="field"><label for="name">Full Name *</label><input id="name" name="name" type="text" required autocomplete="name"></div>
+          <div class="row2">
+            <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+            <div class="field"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" required autocomplete="tel"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="service">Service</label><select id="service" name="service"><option value="General enquiry">General enquiry</option></select></div>
+            <div class="field"><label for="date">Preferred Date</label><input id="date" name="date" type="date"></div>
+          </div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us about the look you want..."></textarea></div>
+          <button type="submit" class="btn btn-pink" style="width:100%">Send Message</button>
+          <div id="form-msg" class="form-msg" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+
+    <div class="map-box reveal">
+      <iframe title="The Hot Sit location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Mall+of+the+South,+Johannesburg&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
